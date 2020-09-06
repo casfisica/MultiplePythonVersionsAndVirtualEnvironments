@@ -1,5 +1,7 @@
 # Multiple Python Versions and Virtual Environments
 
+### For Python 3.3 or later
+
 <par>
 In order to install an old Python  in your Debian based system, you need to follow a different procedure— You need to install from the source.
 In your terminal, run the following command to update your system and upgrade your existing packages:
@@ -54,6 +56,8 @@ Add the Old Python directory to the PATH if you need
 
 ```bash
 #export PATH=$PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build
+#Make a symbolic link
+
 #If 
 ```
 
@@ -79,4 +83,4 @@ By default it will setup the current python version in the system. In order to u
 $PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build/python${PYTHON_VERSION} -m venv Name-env
 ```
 
-__Note:__ For Python 3.3 or later, refer to README_pyenv.md.
+__Note:__ For Python 3.2 or older, refer to README_pyenv.md.
