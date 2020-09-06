@@ -46,19 +46,23 @@ To install the Python 3.X, run the following command:
 </par>
 
 ```bash
-make altinstall
+make install
 # If you don't use the --prefix, it will try to install on the user/bin, then you should use altinstall in order to evade compatibility isues
 #sudo make altinstall
 ```
 </par>
-Add the Old Python directory to the PATH if you need
+Add the Old Python directory to the PATH if you need, or you can add a simbolic link to the user/local/bin
+
 </par>
 
 ```bash
-#export PATH=$PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build
-#Make a symbolic link
+#Export the bin python path to PATH
+#export PATH=$PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build/bin
 
-#If 
+#Make a symbolic link
+length=${#PYTHON_VERSION}
+if [ $length -gt 3 ] ; then PYTHON_VER=${PYTHON_VERSION%.*} ; else PYTHON_VER=${PYTHON_VERSION} ;fi
+sudo ln -s ${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build/bin/python${PYTHON_VER} /usr/local/bin/python${PYTHON_VER} 
 ```
 
 <par>
