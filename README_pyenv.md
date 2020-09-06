@@ -34,6 +34,7 @@ pyenv update
 <par>
   For example, to download and install Python 2.7.8, run:
 </par>
+
 ```bash
 pyenv install 2.7.8
 ```
