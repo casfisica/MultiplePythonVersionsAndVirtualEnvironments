@@ -29,3 +29,11 @@ You can now begin using pyenv.
 ```bash
 pyenv update
 ```
+
+### Install Python versions into $(pyenv root)/versions. 
+<par>
+  For example, to download and install Python 2.7.8, run:
+</par>
+```bash
+pyenv install 2.7.8
+```
