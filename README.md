@@ -48,3 +48,20 @@ Now Python 3.7 can be run using:
 ```bash
 python3.7
 ```
+
+## Virtual Env
+<par>
+To install a virtual enviroment run
+</par>
+
+```bash
+python3 -m venv tutorial-env
+```
+By default it will setup the current python version in the system. In order to use a different version (like the 3.7 installed before), Just use the --python (or short -p) option when creating your virtualenv instance to specify the Python executable you want to use, e.g.:
+
+```bash
+virtualenv --python=/usr/bin/python3.7 <path/to/new/virtualenv/>
+```
+<par>
+__Note:__ For Python 3.3 or later, refer to README_pyenv.md.
+</par>
