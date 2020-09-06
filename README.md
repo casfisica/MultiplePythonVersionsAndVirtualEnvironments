@@ -10,24 +10,11 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git libedit-dev
 ```
 
-<par>
- Clone the pyenv installer from the GitHub page to your system [pyenv-installer](https://github.com/pyenv/pyenv-installer)
-</par>  
-
-```bash
-git clone git@github.com:pyenv/pyenv-installer.git
-cd pyenv-installer
-```
 ## Installation
 
 Install:
 ```bash
 $ curl https://pyenv.run | bash
-```
-pyenv.run redirects to the install script in this repository and the invocation above is equivalent to:
-
-```bash
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 ```
 Restart your shell so the path changes take effect:
 
@@ -41,13 +28,4 @@ You can now begin using pyenv.
 
 ```bash
 pyenv update
-```
-
-### Uninstallation
-<par>
-For uninstallation go to 
-</par>
-
-```'bash
-
 ```
