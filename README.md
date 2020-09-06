@@ -15,7 +15,7 @@ xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git libedit-dev
 </par>  
 
 ```bash
-git@github.com:pyenv/pyenv-installer.git
+git clone git@github.com:pyenv/pyenv-installer.git
 cd pyenv-installer
 ```
 ## Installation
