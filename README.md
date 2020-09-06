@@ -62,7 +62,7 @@ Now Python 3.X can be run using:
 </par>
 
 ```bash
-python3.X
+$PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build/python${PYTHON_VERSION}
 ```
 
 ## Virtual Env
@@ -76,7 +76,7 @@ To install a virtual enviroment run
 By default it will setup the current python version in the system. In order to use a different version (like the 3.7 installed before), Just use the --python (or short -p) option when creating your virtualenv instance to specify the Python executable you want to use, e.g.:
 
 ```bash
-#virtualenv --python=<path/to/python/build> <path/to/new/virtualenv/>
+$PATH:${BASEDIRECTORY}/Python-${PYTHON_VERSION}-build/python${PYTHON_VERSION} -m venv Name-env
 ```
 
 __Note:__ For Python 3.3 or later, refer to README_pyenv.md.
