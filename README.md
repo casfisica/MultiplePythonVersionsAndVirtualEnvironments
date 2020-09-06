@@ -62,6 +62,7 @@ By default it will setup the current python version in the system. In order to u
 ```bash
 virtualenv --python=/usr/bin/python3.7 <path/to/new/virtualenv/>
 ```
+
 <par>
 __Note:__ For Python 3.3 or later, refer to README_pyenv.md.
 </par>
